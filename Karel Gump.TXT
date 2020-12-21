@@ -1,0 +1,29 @@
+class program {
+
+void sonda(){
+    if(nextToABeeper){
+    pickbeeper();
+        if(nextToABeeper){
+        turnoff();
+        }
+    putbeeper();
+    turnleft();
+    }
+if(notNextToABeeper){
+iterate(2) putbeeper();
+}
+if(frontIsBlocked)turnoff();
+if(frontIsClear)move();
+}
+void scan(){
+while (frontIsClear||frontIsBlocked) sonda();
+}
+
+program() {
+
+    scan();
+
+    turnoff();
+}
+
+}

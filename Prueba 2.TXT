@@ -1,0 +1,33 @@
+class program {
+
+void salto(){
+turnleft();
+move();
+iterate(3){
+turnleft();
+}
+move();
+iterate(3){
+turnleft();
+}
+move();
+turnleft();
+}
+
+program() {
+
+    while(leftIsClear){
+
+        while(frontIsClear){
+         if(nextToABeeper){
+        turnoff();
+        }
+        move();
+        }
+        salto();
+
+    }
+    turnoff();
+}
+
+}

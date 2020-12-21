@@ -1,0 +1,51 @@
+class program {
+
+void ubicate(){
+iterate(3) turnleft();
+move();
+turnleft();
+iterate(3) move();
+turnleft();
+move();
+iterate(3) turnleft();
+}
+void cuenta(n){
+    if(nextToABeeper){
+    pickbeeper();
+    cuenta(succ(n))
+    }
+    else {
+    move();
+    multiplica(n);
+    }
+}
+void multiplica(n){
+    if(nextToABeeper){
+    pickbeeper();
+    multiplica(n)
+    iterate(n) putbeeper();
+    }
+    else {
+    veAlInicio();
+    }
+
+
+}
+void veAlInicio(){
+iterate(3) turnleft();
+move();
+iterate(3) turnleft();
+iterate(4) move();
+iterate(3) turnleft();
+move();
+}
+program() {
+
+    ubicate();
+    cuenta(0);
+
+
+    turnoff();
+}
+
+}
